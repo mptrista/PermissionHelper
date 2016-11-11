@@ -35,5 +35,5 @@ The easiest way to add support for run-time permission in a fragment.
                     }
                 });
                 
-**The reference to the callback is Weak so if you want to be sure make a strong reference to it.
+**The reference to the callback is Weak so if you want to be sure make a strong reference to it.**
                 
