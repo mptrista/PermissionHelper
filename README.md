@@ -19,7 +19,7 @@ The easiest way to add support for run-time permission in a fragment.
         permissionHelper.onRequestPermissionResult(this, requestCode, permissions[0], grantResults);
     }
 
-**3nd step: When you need a specific permission inside of a Fragment**
+**3nd step: Requesting a specific permission inside of a Fragment**
 
     permissionHelper.executeWithPermCheck(this, PermissionHelper.STORAGE,
                 new PermissionHelper.Callback() {
