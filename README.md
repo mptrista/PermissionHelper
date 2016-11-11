@@ -2,6 +2,7 @@
 The easiest way to add support for run-time permission in a fragment.
 
 
+
 **1st step: Init a permission helper**
 
     private PermissionHelper permissionHelper;
@@ -30,12 +31,9 @@ The easiest way to add support for run-time permission in a fragment.
 
                     @Override
                     public void onRationaleNeeded() {
-                        // Here you can show the need for the permission
-                        // Or you can tell the user how to change permissions from settings
-                        // You can give shortcut to settings with 
-                        // PermissionHelper.getAppSettingsIntent(getContext().getPackageName())
-                        // You can do that as an action to a Snackbar.
+                        // The case when Don't show again is checked
                     }
                 });
                 
+**The reference to the callback is Weak so if you want to be sure make a strong reference to it.
                 
